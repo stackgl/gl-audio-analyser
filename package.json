@@ -1,0 +1,43 @@
+{
+  "name": "gl-audio-analyser",
+  "version": "1.0.0",
+  "description": "Pull audio waveform/frequency data into WebGL for realtime audio visualisation!",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "budo demo/index.js --transform glslify | bistre",
+    "bundle": "browserify demo/index.js --transform glslify > bundle.js"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {
+    "gl-texture2d": "^2.0.8",
+    "ndarray": "^1.0.16",
+    "web-audio-analyser": "^2.0.0"
+  },
+  "devDependencies": {
+    "a-big-triangle": "^1.0.0",
+    "bistre": "^1.0.1",
+    "browserify": "^8.1.3",
+    "budo": "^0.1.12",
+    "canvas-fit": "^1.2.0",
+    "gl-context": "^0.1.1",
+    "glslify": "^1.6.0",
+    "soundcloud-badge": "0.0.0",
+    "watchify": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/gl-audio-analyser.git"
+  },
+  "keywords": [
+    "ecosystem:stackgl"
+  ],
+  "homepage": "https://github.com/stackgl/gl-audio-analyser",
+  "bugs": {
+    "url": "https://github.com/stackgl/gl-audio-analyser/issues"
+  }
+}
