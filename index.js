@@ -40,7 +40,7 @@ GLAudioAnalyser.prototype.bindWaveform = function(index, channel) {
   }
 
   this.waveTex.setPixels(this.waveNda)
-  return this.waveTex.bind(index)
+  return this.waveTex.bind(index, channel)
 }
 
 GLAudioAnalyser.prototype.bindFrequencies = function(index, channel) {
@@ -52,5 +52,5 @@ GLAudioAnalyser.prototype.bindFrequencies = function(index, channel) {
   }
 
   this.freqTex.setPixels(this.freqNda)
-  return this.freqTex.bind(index)
+  return this.freqTex.bind(index, channel)
 }
