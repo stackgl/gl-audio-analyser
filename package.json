@@ -1,6 +1,6 @@
 {
   "name": "gl-audio-analyser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pull audio waveform/frequency data into WebGL for realtime audio visualisation!",
   "main": "index.js",
   "license": "MIT",
