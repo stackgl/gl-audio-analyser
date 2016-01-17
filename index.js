@@ -38,9 +38,10 @@ GLAudioAnalyser.prototype.bindWaveform = function(index) {
   for (var i = 0; i < wave.length; i++) {
     waveFlt[i] = (wave[i] - 128) / 128
   }
-
+  
+  this.waveTex.bind(index)
   this.waveTex.setPixels(this.waveNda)
-  return this.waveTex.bind(index)
+  return index
 }
 
 GLAudioAnalyser.prototype.bindFrequencies = function(index) {
@@ -51,6 +52,7 @@ GLAudioAnalyser.prototype.bindFrequencies = function(index) {
     freqFlt[i] = freq[i] / 256
   }
 
+  this.freqTex.bind(index)
   this.freqTex.setPixels(this.freqNda)
-  return this.freqTex.bind(index)
+  return index
 }
