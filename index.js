@@ -31,7 +31,7 @@ GLAudioAnalyser.prototype.waveform = function(channel) {
 GLAudioAnalyser.prototype.frequencies = function(channel) {
   return this.waa.frequencies(null, channel)
 }
-GLAudioAnalyser.prototype.bindWaveform = function(index, channel) {
+GLAudioAnalyser.prototype.bindWaveform = function(index) {
   var wave = this.waveform()
   var waveFlt = this.waveFlt
 
@@ -43,7 +43,7 @@ GLAudioAnalyser.prototype.bindWaveform = function(index, channel) {
   return this.waveTex.bind(index)
 }
 
-GLAudioAnalyser.prototype.bindFrequencies = function(index, channel) {
+GLAudioAnalyser.prototype.bindFrequencies = function(index) {
   var freq = this.frequencies()
   var freqFlt = this.freqFlt
 
